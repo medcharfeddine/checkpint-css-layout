@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Work+Sans:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --main-color: #00b39b;
+  --second-color: #ababab;
+}
+
+::selection {
+  background: var(--main-color);
+  color: #fff;
+  text-shadow: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 400;
+  padding: 70px 0px 0px;
+}
+
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  background: hsla(0, 0%, 100%, 0.98);
+  transition: box-shadow 0.25s ease 0s;
+}
+
+.nav {
+  display: block;
+  zoom: 1;
+  max-width: 1015px;
+  padding: 0 20px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.second-nav {
+  position: relative;
+  float: right;
+}
+
+.main-menu {
+  display: flex;
+  list-style: none;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 2em;
+  padding: 1.33em 0;
+  margin: 0;
+}
+
+.main-menu a {
+  color: #ababab;
+  display: block;
+  text-decoration: none;
+  padding: 0 0.6em;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.main-menu ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+ul > li {
+  /* padding: 0px 19px; */
+}
+
+li > a {
+  text-decoration: none;
+  color: var(--second-color);
+}
+
+a:hover {
+  color: var(--main-color);
+}
+
+.logo-container {
+  margin: 2px 0 0;
+  line-height: 68px;
+  display: inline-block;
+  position: relative;
+}
+
+.main-header a {
+  display: inline-block;
+}
+
+.logo {
+  width: 268px;
+  height: 33px;
+}
+
+.main {
+  margin: -11px auto;
+}
+
+.first {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.green-star {
+  max-width: 100%;
+  width: 50px;
+  height: 49px;
+}
+
+.fisrt h1 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.125rem;
+  color: var(--main-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 1em 0;
+  font-family: Work Sans, Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: -0.3px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.p1,
+.p2 {
+  text-align: justify;
+  margin: 0.8em 0;
+  line-height: 1.75;
+  font-weight: 400;
+  font-size: 0.935rem;
+}
