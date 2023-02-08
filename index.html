@@ -37,7 +37,14 @@
             <ul class="main-menu">
               <li><a href="#">About us</a></li>
               <li><a href="#">Career</a></li>
-              <li><a href="#">Departments</a></li>
+              <div class="dropdown">
+                <button class="dropbtn">Departments</button>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
             </ul>
           </nav>
         </div>
@@ -66,26 +73,83 @@
       </section>
       <section class="second">
         <div class="cartes">
-          <div class="carte">
-            <i class="fa-solid fa-users"></i>
-            <h1>For patients</h1>
-            <h2>
-              Find a doctor, book a visit and solve any health-related doubt
-            </h2>
+          <div class="carte carte__1">
+            <div class="top">
+              <i class="fa-solid fa-users"></i>
+              <h1>For patients</h1>
+              <h2>
+                Find a doctor, book a visit and solve any health-related doubt
+              </h2>
+            </div>
+            <div class="bottom">
+              <select name="country" id="country">
+                <option value="choosecountry">Choose Country</option>
+                <option value="argentina">Argentina</option>
+                <option value="brazil">Brazil</option>
+                <option value="chile">Chile</option>
+                <option value="colombia">Colombia</option>
+                <option value="czech">Czech</option>
+                <option value="germany">Germany</option>
+                <option value="italy">Italy</option>
+                <option value="mexico">Mexico</option>
+                <option value="peru">Peru</option>
+                <option value="poland">Poland</option>
+                <option value="spain">Spain</option>
+                <option value="turkey">Turkey</option>
+              </select>
+            </div>
           </div>
-          <div class="carte">
-            <i class="fa-solid fa-user-nurse"></i>
-            <h1>For patients</h1>
+          <div class="carte carte__2">
+            <div class="top">
+              <i class="fa-solid fa-user-nurse"></i>
+            <h1>For doctors</h1>
             <h2>
-              Find a doctor, book a visit and solve any health-related doubt
+              Save time managing visits and cut no-shows by half
             </h2>
+            </div>
+            <div class="bottom">
+              <select name="country" id="country">
+                <option value="choosecountry">Choose Country</option>
+                <option value="argentina">Argentina</option>
+                <option value="brazil">Brazil</option>
+                <option value="chile">Chile</option>
+                <option value="colombia">Colombia</option>
+                <option value="czech">Czech</option>
+                <option value="germany">Germany</option>
+                <option value="italy">Italy</option>
+                <option value="mexico">Mexico</option>
+                <option value="peru">Peru</option>
+                <option value="poland">Poland</option>
+                <option value="spain">Spain</option>
+                <option value="turkey">Turkey</option>
+              </select>
+            </div>
           </div>
-          <div class="carte">
-            <i class="fa-solid fa-hospital"></i>
-            <h1>For patients</h1>
+          <div class="carte carte__3">
+            <div class="top">
+              <i class="fa-solid fa-hospital"></i>
+            <h1>For clinics</h1>
             <h2>
-              Find a doctor, book a visit and solve any health-related doubt
+              Deliver an exceptional patient experience in your clinic
             </h2>
+            </div>
+            <div class="bottom">
+              <select name="country" id="country">
+                <option value="choosecountry">Choose Country</option>
+                <option value="argentina">Argentina</option>
+                <option value="brazil">Brazil</option>
+                <option value="chile">Chile</option>
+                <option value="colombia">Colombia</option>
+                <option value="czech">Czech</option>
+                <option value="germany">Germany</option>
+                <option value="italy">Italy</option>
+                <option value="mexico">Mexico</option>
+                <option value="peru">Peru</option>
+                <option value="poland">Poland</option>
+                <option value="spain">Spain</option>
+                <option value="turkey">Turkey</option>
+              </select>
+            </div>
           </div>
         </div>
       </section>

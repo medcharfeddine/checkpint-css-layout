@@ -1,14 +1,63 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Work+Sans:wght@300;400;500;600;700&display=swap");
 
 :root {
+  --color-white: #fff;
   --main-color: #00b39b;
   --second-color: #ababab;
+  --firstcard-color: #00ccb1;
+  --secondcarte-color: #3d83df;
+  --thirdcarte-color: #1b2734;
 }
 
 ::selection {
   background: var(--main-color);
-  color: #fff;
+  color: var(--color-white);
   text-shadow: none;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: var(--second-color);
+
+  font-size: 16px;
+  border: none;
+}
+
+/* .dropdown button {
+  color: var(--second-color);
+} */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: transparent;
 }
 
 body {
@@ -26,7 +75,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 3;
+  /*  z-index: 3; */
   background: hsla(0, 0%, 100%, 0.98);
   transition: box-shadow 0.25s ease 0s;
 }
@@ -56,7 +105,7 @@ body {
 }
 
 .main-menu a {
-  color: #ababab;
+  color: var(--second-color);
   display: block;
   text-decoration: none;
   padding: 0 0.6em;
@@ -76,10 +125,6 @@ ul {
   display: flex;
   list-style: none;
   margin: 0;
-}
-
-ul > li {
-  /* padding: 0px 19px; */
 }
 
 li > a {
@@ -108,7 +153,7 @@ a:hover {
 }
 
 .main {
-  margin: -11px auto;
+  margin: 33px auto 60px;
 }
 
 .first {
@@ -119,33 +164,24 @@ a:hover {
 
 .green-star {
   max-width: 100%;
-  width: 50px;
-  height: 49px;
+  width: 40px;
+  height: 39px;
 }
 
 .fisrt h1 {
   text-align: center;
 }
 
-h1 {
-  font-size: 2.125rem;
+.fs-title {
+  font-size: 2rem;
   color: var(--main-color);
-}
-
-h1,
-h2,
-h3,
-h4 {
-  margin: 1em 0;
-  font-family: Work Sans, Arial, sans-serif;
-  font-weight: 300;
-  letter-spacing: -0.3px;
 }
 
 .container {
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  padding: 0 101px;
+  gap: 20px;
 }
 
 .p1,
@@ -155,4 +191,110 @@ h4 {
   line-height: 1.75;
   font-weight: 400;
   font-size: 0.935rem;
+  color: var(--second-color);
+}
+
+.cartes {
+  display: flex;
+  gap: 1rem;
+  margin: 0px 207px;
+}
+
+.cartes h1 {
+  color: var(--color-white);
+  font-size: 1.25rem;
+  margin: 0px;
+}
+
+.cartes h2 {
+  font-size: 1.125em;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0;
+  color: var(--color-white);
+}
+
+.carte {
+  border-radius: 10px;
+  overflow: hidden;
+  height: 345px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.carte__1 {
+  background-color: var(--firstcard-color);
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.carte__2 {
+  background-color: var(--secondcarte-color);
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.carte__3 {
+  background-color: var(--thirdcarte-color);
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 180px;
+  justify-content: space-around;
+}
+
+i {
+  color: var(--color-white);
+}
+
+#select {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  outline: 0;
+  background: none;
+  border: 0;
+  color: #fff;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  font-size: 1.2rem;
+  text-align: center;
+  scale: 0.7;
+}
+
+select {
+  width: 100%;
+  background: transparent;
+  color: var(--color-white);
+  border: 0;
+  border-radius: 0;
+  padding: 0 2em 0 0;
+  --webkit-appearance: none;
+  outline: 0;
+  text-transform: none;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+option {
+  color: #333;
+  background-color: var(--color-white);
+  font-size: 0.5rem;
+  line-height: 1.2;
 }
