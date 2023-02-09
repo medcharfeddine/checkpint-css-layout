@@ -35,8 +35,8 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
+  background-color: var(--color-white);
+  min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -67,7 +67,7 @@ body {
   height: auto;
   font-family: Roboto, Arial, sans-serif;
   font-weight: 400;
-  padding: 70px 0px 0px;
+  padding: 70px 15px 0px;
 }
 
 .main-nav {
@@ -109,22 +109,6 @@ body {
   display: block;
   text-decoration: none;
   padding: 0 0.6em;
-}
-
-ul {
-  display: block;
-  list-style-type: disc;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-}
-
-.main-menu ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
 }
 
 li > a {
@@ -175,12 +159,15 @@ a:hover {
 .fs-title {
   font-size: 2rem;
   color: var(--main-color);
+  font-family: 'Work Sans';
+  font-weight: 300;
+  margin: 40px 0;
 }
 
 .container {
   display: flex;
   flex-direction: row;
-  padding: 0 101px;
+  padding: 0 75px;
   gap: 20px;
 }
 
@@ -197,7 +184,7 @@ a:hover {
 .cartes {
   display: flex;
   gap: 1rem;
-  margin: 0px 207px;
+  justify-content: center;
 }
 
 .cartes h1 {
@@ -217,6 +204,7 @@ a:hover {
 .carte {
   border-radius: 10px;
   overflow: hidden;
+  width: 15.875rem;
   height: 345px;
   display: flex;
   flex-direction: column;
@@ -225,28 +213,16 @@ a:hover {
 
 .carte__1 {
   background-color: var(--firstcard-color);
-  width: 33.33%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   padding: 20px;
 }
 
 .carte__2 {
   background-color: var(--secondcarte-color);
-  width: 33.33%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   padding: 20px;
 }
 
 .carte__3 {
   background-color: var(--thirdcarte-color);
-  width: 33.33%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   padding: 20px;
 }
 
@@ -297,4 +273,68 @@ option {
   background-color: var(--color-white);
   font-size: 0.5rem;
   line-height: 1.2;
+}
+
+.third {
+  display: flex;
+  margin: 2.5rem auto 3.125rem;
+  align-items: center;
+}
+
+.third h1 {
+  font-family: Work Sans, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 1.625em;
+  color: var(--firstcard-color);
+  padding: 0 60px 0;
+  margin: 0 -136px 0 105px;
+}
+
+.brands__logos {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0;
+  list-style: none;
+  width: 67%;
+}
+
+.brands__logos li {
+  font-size: 1rem;
+  display: inline-block;
+  margin-top: 0;
+  padding: 5px 0 5px 5px;
+  width: 25%;
+}
+.brands__logos a {
+  display: inline-block;
+  padding: 5px 0;
+}
+
+.third ul li a svg {
+  width: auto;
+  height: 20px;
+}
+.third ul li a img {
+  width: auto;
+  height: 20px;
+}
+
+.fourth {
+  background-color: #E5FAF8;
+  height: 600px;
+  width: 100vw;
+  padding: 30px 0 10px 0;
+}
+
+.fourth-1 {
+  width: 497.5px;
+  height: 200px;
+}
+
+.fourth-1 h1 {
+  font-family: 'Work Sans';
+  font-size: 34px;
+  font-weight: 300;
+  line-height: 40px;
+  color: var(--firstcard-color);
 }
